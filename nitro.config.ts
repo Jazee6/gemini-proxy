@@ -4,9 +4,9 @@ export default defineNitroConfig({
     vercel: {
         regions: ["cle1", "iad1", "pdx1", "sfo1", "sin1", "syd1", "hnd1", "kix1"]
     },
-    routeRules: {
-        '/**': {
-            proxy: 'https://generativelanguage.googleapis.com/**'
-        }
-    }
+    // routeRules: {
+    //     '/**': {
+    //         proxy: 'https://generativelanguage.googleapis.com/**'
+    //     }
+    // }
 })
