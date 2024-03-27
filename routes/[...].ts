@@ -7,14 +7,9 @@ export default defineEventHandler(async event => {
     if (event.method === 'POST') {
         body = await readBody(event)
     }
-    const res = await fetch(PROXY_URL + url.pathname + url.search, {
+    return fetch(PROXY_URL + url.pathname + url.search, {
         method: event.method,
         headers: headers,
         body: body,
-    })
-    return new Response(res.body, {
-        status: res.status,
-        statusText: res.statusText,
-        headers: res.headers,
     })
 })
