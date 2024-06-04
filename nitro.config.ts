@@ -2,7 +2,7 @@
 export default defineNitroConfig({
     preset: 'vercel_edge',
     vercel: {
-        regions: ["syd1" ,"sfo1", "iad1", "pdx1", "cle1"]
+        regions: ["sin1", "syd1", "sfo1", "iad1", "pdx1", "cle1"]
     },
     // routeRules: {
     //     '/**': {
